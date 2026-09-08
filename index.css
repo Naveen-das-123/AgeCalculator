@@ -1,0 +1,15 @@
+
+
+body {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;     /* vertical center */
+    height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    color: red;
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+}
