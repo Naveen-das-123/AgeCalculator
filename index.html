@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Time</title>
-   <link rel="stylesheet" href="index.css">
+    <title>Resume</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1 id="timer">00 : 00 : 00</h1>
+    <form id="resumeForm">
+    <h1 id="resumeGenerator">Resume Generator</h1>
+    <div id="GrandDiv">
+    <div id="mainDiv">
+    <h1 class="heading">Personal Informationn</h1>
+    <label>Enter name</label>
+    <input class="input" type="text" placeholder="Enter here" required>
+    <label>Enter phoneNumber</label>
+    <input class="input" type="tel" placeholder="Enter here" pattern="\+91 [0-9]{10}" value="+91 ">
+    <label>Enter address</label>
+    <textarea class="textArea" placeholder="Enter here" required></textarea>
+
+    <h1 class="heading">Importants Links</h1>
+    <label>Enter GitHub</label>
+    <input class="input" type="url" placeholder="Enter here">
+    <label>Enter LeetCode</label>
+    <input class="input" type="url" placeholder="Enter here">
+    <label>Enter LinkedIn</label>
+    <input class="input" type="url" placeholder="Enter here">
+    </div>
+
+    <div id="secondMainDiv">
+        <h1 class="heading">Professional Information</h1>
+    <label>Objective</label>
+        <textarea class="textArea" placeholder="Enter here" required></textarea>
+          <label>Work Experience</label>
+          <input class="input" type="text" placeholder="Enter here" required>
+          <button value="firstChild" class="button" type="button" onclick="call(event)">Add</button>
+          <label>Academic Qualifications</label>
+          <input class="input" type="text" placeholder="Enter here" required>
+           <button value="secondChild" class="button" type="button" onclick="call(event)">Add</button>
+    </div>
+    </div>
+
+    <button type="submit" id="GenerateButton">Generate Resume</button>
+    </form>
 
 <script src="index.js" defer></script>
 </body>
