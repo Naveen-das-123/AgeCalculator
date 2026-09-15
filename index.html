@@ -1,49 +1,73 @@
-<!DOCTYPE html>
+
+
+      <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Age Calculator</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <form id="resumeForm">
-    <h1 id="resumeGenerator">Resume Generator</h1>
-    <div id="GrandDiv">
-    <div id="mainDiv">
-    <h1 class="heading">Personal Informationn</h1>
-    <label>Enter name</label>
-    <input class="input" type="text" placeholder="Enter here" required>
-    <label>Enter phoneNumber</label>
-    <input class="input" type="tel" placeholder="Enter here" pattern="\+91 [0-9]{10}" value="+91 ">
-    <label>Enter address</label>
-    <textarea class="textArea" placeholder="Enter here" required></textarea>
 
-    <h1 class="heading">Importants Links</h1>
-    <label>Enter GitHub</label>
-    <input class="input" type="url" placeholder="Enter here">
-    <label>Enter LeetCode</label>
-    <input class="input" type="url" placeholder="Enter here">
-    <label>Enter LinkedIn</label>
-    <input class="input" type="url" placeholder="Enter here">
-    </div>
+    <form id="form">
 
-    <div id="secondMainDiv">
-        <h1 class="heading">Professional Information</h1>
-    <label>Objective</label>
-        <textarea class="textArea" placeholder="Enter here" required></textarea>
-          <label>Work Experience</label>
-          <input class="input" type="text" placeholder="Enter here" required>
-          <button value="firstChild" class="button" type="button" onclick="call(event)">Add</button>
-          <label>Academic Qualifications</label>
-          <input class="input" type="text" placeholder="Enter here" required>
-           <button value="secondChild" class="button" type="button" onclick="call(event)">Add</button>
-    </div>
-    </div>
+        <div id="container">
 
-    <button type="submit" id="GenerateButton">Generate Resume</button>
+            <h1>AGE CALCULATOR</h1>
+
+            <p id="p">Provide your date of birth</p>
+
+            <input
+                required
+                type="number"
+                id="date"
+                placeholder="Enter date"
+                min="1"
+                max="31"
+            >
+
+            <input
+                required
+                list="monthName"
+                id="month"
+                placeholder="Enter month"
+                type="text"
+            >
+
+
+      <datalist id="monthName">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </datalist>
+
+            <input
+                required
+                type="number"
+                id="year"
+                placeholder="Enter year"
+            >
+
+            <button type="submit" onclick="calculate(event)">Calculate</button>
+
+        </div>
+
     </form>
 
-<script src="index.js" defer></script>
+    <script src="index.js"></script>
+
 </body>
+
 </html>

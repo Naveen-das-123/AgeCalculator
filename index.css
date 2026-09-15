@@ -1,82 +1,55 @@
-* {
+*{
     margin: 0;
-    padding: 0;
     text-decoration: none;
+    padding: 0;
+    border: none;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh; 
-     background-color: #ffffffdd;
-}
-
-#GrandDiv {
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
- /* mainDiv */
-#mainDiv {
-     background-color: #ffffffdd;
-    width: 50%;
+#container {
+    width: 500px;
+    margin: 20px;  
+    background-color: aqua;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap : 5px;
+}
+
+h1 {
+    text-align: center;
     padding: 10px;
-    margin-top: 40px;
+    
 }
 
-#resumeGenerator {
-   text-align: center;
-   font-size: 25px;
+p {
+    margin-left: 10px;
+    width: 300px;
 }
 
-
-.heading {
-    font-size: 20px;
-    margin-top: 10px;
+input {
+   width: 300px;
+   margin-left: 10px;
+   margin-top: 8px;
+   padding: 5px;
+   border-radius: 5px;
 }
 
-.input {
-    width: 75%;
-    padding: 3px;
-    border: 1px solid silver;
-    border-radius: 3px;
-}
-
-.textArea {
-    width: 75%;
-    height: 60px;
-    padding: 3px;
-    border: 1px solid silver;
-    border-radius: 3px;
-    resize: none;
-}
-
-/* secondMainDiv */
-#secondMainDiv {
-     background-color: #ffffffdd;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap : 5px;
-    padding: 10px;
-     margin-top: 40px;
-}
-
-.button {
-    width: 22%;
-    height: 5%;
-    transform: translatex(120%);
-    margin-top: 10px;
-    margin-bottom: 10px;
+button {
+    width: 70px;
+    margin: 10px auto;
+    padding: 5px;
     border-radius: 5px;
 }
 
-#GenerateButton {
-    display: block;
-    margin: 10px auto;
-    padding: 6px;
-    border: 1px solid black;
-    border-radius: 10px;
+select {
+   width: 307px;
+   margin-left: 10px;
+   margin-top: 8px;
+   padding: 5px;
+   border-radius: 5px;
 }
-
