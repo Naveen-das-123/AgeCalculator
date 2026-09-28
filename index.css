@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 90%;
+    width: 450px;
     margin: 40px auto;
 
     background-color: aqua;
@@ -26,27 +26,13 @@ body {
 
 
 /* 📱 Mobile: 0px - 600px */
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     #container {
-        width: 95%;
+        width: 90%;
     }
 }
 
 
-/* 📱 Tablet: 601px - 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
-    #container {
-           width: 500px;
-    }
-}
-
-
-/* 💻 Desktop: 1025px and above */
-@media (min-width: 1025px) {
-    #container {
-        width: 500px;
-    }
-}
 
 h1 {
     text-align: center;
